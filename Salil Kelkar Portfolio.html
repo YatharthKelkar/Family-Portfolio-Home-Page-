@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatharth Kelkar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #ff6f61, #ff4757, #ff9a00);
+            padding: 50px 20px;
+            font-size: 2em;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #1a1a1a;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        section {
+            padding: 100px 20px;
+            transition: all 0.5s;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('https://source.unsplash.com/1600x900/?technology,futuristic') center/cover;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+        .hero h1 {
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .section:nth-child(odd) {
+            background: rgba(34, 49, 63, 0.8);
+        }
+        .section:nth-child(even) {
+            background: rgba(44, 62, 80, 0.8);
+        }
+        .btn {
+            background: #ff4757;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background: #ff9a00;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .skill {
+            background: linear-gradient(45deg, #ff6b81, #ff4757, #ff9a00);
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+        }
+        footer {
+            background: #1a1a1a;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Salil Kelkar - Portfolio
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p> 18 Years + work experience in Bid Management , Engineering & Project Management | Hydrogen | Power Plant | NIT Surat Graduate </p>
+        <a href="https://www.linkedin.com/in/salil-kelkar/?originalSubdomain=ae" target="_blank" class="btn">Visit My Linkedin Account</a>
+    </section>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hi, I'm Salil Kelkar I am an energy industry professional with 17 years of experience in power projects, specializing in bid management, business development, and project execution. I have successfully led high-profile bids, securing major contracts across the Middle East. With expertise in engineering, contracts, and risk management, I thrive in leadership roles, driving innovation and delivering results. Passionate about the energy sector, I excel in creating competitive bids and strategic solutions for power plant projects. </p>
+    </section>
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">Lead & Work in multi-cultural team  </div>
+            <div class="skill">Strong Networking skills</div>
+            <div class="skill">Technical Knowledge</div>
+            <div class="skill">Meticulous and Analytical Skills</div>
+            <div class="skill">Excellent communication skills</div>
+            <div class="skill">Passion about Energy Business </div>
+            <div class="skill">Financial Acumen </div>
+        </div>
+    </section>
+    <section id="education" class="section">
+        <h2>Education</h2>
+            <ul>
+            <li>
+                Bachelor’s in Technology (Mechanical Engineering) – National Institute of Technology (2007)
+            </li>
+            <br>
+            <li>
+                Project Management Professional (PMP) Certification – Project Management Institute (2014)
+            </li>
+            <br>
+            <li>
+                Executive Program in Business Analytics – Indian Institute of Management, Lucknow (2021)
+            </li>
+        </ul>
+    
+    </section>
+    <section id="work" class="section">
+        <h1>Work</h1>
+        <ul>
+            <li>
+                <h2>2007 – 2011 | Process Engineer, L&T S&L</h2>
+                Managed engineering deliverables for combined cycle & power projects, specializing in system design.
+            </li>
+            <li>
+                <h2>2012 – 2014 | Assistant Manager (Process & Mechanical), L&T S&L</h2>
+                Led engineering for supercritical & thermal power plants, optimizing design and costs.
+            </li>
+            <li>
+                <h2>2014 – 2015 | Manager – Mechanical, L&T S&L</h2>
+                Executed HRSG replacement projects, managing engineering, procurement, and risk mitigation.
+            </li>
+            <li>
+                <h2>2015 – 2021 | Bid Manager, Siemens</h2>
+                Led competitive bids, secured major contracts, optimized costs, and managed risk strategies.
+            </li>
+            <li>
+                <h2>2019 – 2021 | Project Engineering Manager, Siemens</h2>
+                Oversaw engineering execution for large-scale power plants, ensuring seamless integration and project success.
+            </li>
+            <li>
+                <h2>2021 – 2022 | Project Engineering Manager, Siemens Energy</h2>
+                Managed engineering for Green Hydrogen projects, developed execution plans, and led technical evaluations.
+            </li>
+            <li>
+                <h2>2022 – Present | General Proposal Manager, Siemens Energy</h2>
+                Leading bids for Combined Cycle Power Plants & Hydrogen Projects, managing proposals, risk assessment, and contract negotiations.            </li>
+        </ul>
+    </section>
+    <section id="resume" class="section">
+        <h2>My Resume</h2>
+        <p>Resume: <a href="https://drive.google.com/file/d/1sxmUerFsRd9Wrg2_ouagFhfTs-N989kH/view?usp=sharing">Resume</a></p>
+    </section>
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:kelkarsalil@gmail.com">kelkarsalil@gmail.com</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Salil Kelkar. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

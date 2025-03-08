@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>Kelkar Family - Portfolio</title>
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #ff6f61, #ff4757, #ff9a00);
+            padding: 50px 20px;
+            font-size: 2em;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #1a1a1a;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        section {
+            padding: 100px 20px;
+            transition: all 0.5s;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('https://source.unsplash.com/1600x900/?technology,futuristic') center/cover;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+        .hero h1 {
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .section:nth-child(odd) {
+            background: rgba(34, 49, 63, 0.8);
+        }
+        .section:nth-child(even) {
+            background: rgba(44, 62, 80, 0.8);
+        }
+        .btn {
+            background: #ff4757;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background: #ff9a00;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .skill {
+            background: linear-gradient(45deg, #ff6b81, #ff4757, #ff9a00);
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+        }
+        footer {
+            background: #1a1a1a;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+    <header>
+        Kelkar Family - A ambitious Family
+    </header>
+    <body>
+    <nav>
+        <a href ="#about">About</a>
+        <a href="#salil-kelkar">Salil Kelkar</a>
+        <a href="#dewangee-kelkar">Dewangee Kelkar</a>
+        <a href="#yatharth-kelkar">Yatharth Kelkar</a>
+    </nav>
+<section class = "hero">
+  <h1>Kelkar Family Portfolio</h1>
+  <p> A source of endless love, support, and inspiration, shaping my journey in life and technology. </p>
+</section>
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>Hi,we are the to be written by Aai .</p>
+</section>
+<section id="salil-kelkar" class="section">
+    <h1>Salil Kelkar</h1>
+    <h2>Hi all I am  to be written by baba</h2>
+    <p><a href="Salil Kelkar Portfolio.html">See my portfolio</a></p>
+</section>
+<section id="dewangee-kelkar" class="section">
+    <h1>Dewangee Kelkar</h1>
+    <h2>Hi all I am  to be written by aai</h2>
+</section>
+<section id="yatharth-kelkar" class="section">
+    <h1>Yatharth Kelkar</h1>
+    <h3>A passionate coder, web developer, and tech enthusiast, building innovative projects and analyzing the latest tech trends. 🚀<p> Please find my personalized portfolio below:</p></h3>
+    <p><a href="Portfolio.html">See my portfolio</a></p>
+</section>
+<footer>
+    <p>&copy; 2025 Kelkar Family. All Rights Reserved.</p>
+</footer>
+    </body>
+</HTML>
